@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>課題を追加</h2>
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}  
+    <button type="submit">登録</button>
+  </form>
+{% endblock content %}
